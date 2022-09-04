@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<html> 
+<body> 
+
+<div style="text-align:center"> 
+  <button onclick="playPause()">click here first</button> 
+  <br><br>
+  <video id="video1" width="220">
+    <source src="MOV.mp4" type="video/mp4">
+    <source src="MOV.mp4" type="video/ogg">
+    Your browser does not support HTML video.
+  </video>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+</script> 
+
+<p margin-left:60>please click on the above button first </p>
+<a href="blog.html" class="hero_btn btn">CLICK HERE AT LAST</a>
+
+</body> 
+</html>
+
